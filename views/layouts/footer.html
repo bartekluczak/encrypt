@@ -1,5 +1,18 @@
-<a href="/encrypt/index.php"><button>POWRÓT</button></a>
+<ul class="nav justify-content-center mt-3">
+    <li class="nav-item">
+        <a class="nav-link" href="/encrypt/index.php"><button type="button" class="btn btn-outline-primary">POWRÓT</button></a>
+    </li>
+</ul>
 
+<script>
+    function copyFunc() {
+      var copyText = document.getElementById("input");
+      copyText.select();
+      navigator.clipboard.writeText(copyText.value);
+    }
+</script>    
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js" integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous"></script>
 </body>
 
 </html>

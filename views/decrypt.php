@@ -2,11 +2,21 @@
 require 'layouts/head.html';
 ?>
 
-<form action="../views/decrypted.php" method="post">
-    <input type="text" name="key" placeholder="Wprowadź klucz">
-    <input type="text" name="textToDec" placeholder="Tekst do odszyfrowania">
-    <button type="submit">Odszyfruj</button>
-</form>
+<div class="container justify-content-center col-lg-4 mt-5">
+    <form class="row g-3" action="../views/decrypted.php" method="POST">
+        <div class="col-md-6">
+            <label for="inputKey" class="form-label">Wprowadź klucz</label>
+            <input type="text" class="form-control" id="inputKey" name="key" placeholder="">
+        </div>
+        <div class="col-md-6">
+            <label for="inputText" class="form-label">Tekst do odszyfrowania</label>
+            <input type="text" name="textToDec" class="form-control" id="inputPassword4" placeholder="">
+        </div>
+        <div class="col-12">
+            <button type="submit" class="btn btn-primary">Odszyfruj</button>
+        </div>
+    </form>
+</div>
 
 <?php
 require 'layouts/footer.html';
